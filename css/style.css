@@ -1,0 +1,144 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #1B1B1B;
+}
+
+.header {
+    margin-bottom: 90px;
+}
+
+.header__inner {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: auto; /* чтобы то, что после названия (и в т.ч. название) прижалось к провому краю */
+}
+
+.menu {
+    margin-left: 131px; /* отодвигаем текст слева и справа */
+    margin-right: 186px;
+}
+
+.menu__item {
+    font-size: 12px;
+    gap: 10px;
+}
+
+.user-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.top {
+    margin-bottom: 150px;
+}
+
+.top__slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.top-slide__inner {
+    min-height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.top-slide__content {
+    flex-basis: 183px;
+    margin-bottom: 88px;
+}
+
+.top-slide__title {
+    font-family: 'Playfair Display';
+    font-size: 70px;
+    line-height: 1.3;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.top-slide__subtitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.top-slide__text {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.top-slide__btn {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #7449BB;
+    padding: 21px 55px;
+    border: 1px solid #7449BB;
+    display: inline-block;
+    margin-left: auto;
+    transition: all .3s ease;
+}
+
+.top-slide__btn:hover {
+    color: #fff;
+    background-color: #7449BB;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-rt1{
+    content: none;
+}
+
+.container__arrow {
+    position: relative;
+    padding: 0;
+    max-width: 1200px;
+}
+
+.top .swiper {
+    padding-bottom: 50px;
+}
+
+.swiper-button-next {
+    left: 75px;
+    right: auto;
+}
